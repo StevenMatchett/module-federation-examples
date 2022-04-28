@@ -1,5 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+
+export const HelloWorld = dynamic(
+  () =>
+    import("./helloWorld").then(
+      (mod) => mod.HelloWorld
+    ),
+  {
+    ssr: true,
+  }
+);
 
 const links = [
   { href: 'https://zeit.co/now', label: 'ZEIT' },
@@ -13,6 +25,7 @@ const Nav = () => (
   <nav>
     <ul>
       <li>
+        <HelloWorld />
         <Link href="/">
           <a>Home</a>
         </Link>
