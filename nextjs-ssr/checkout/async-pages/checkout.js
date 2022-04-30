@@ -1,7 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-
-const Checkout = props => (
+import {useMatchettState} from 'matchett-test-context'
+const Checkout = props => {
+  const { func } = useMatchettState();
+  func();
+  return (
   <div>
     <Head>
       <title>checkout</title>
@@ -36,7 +39,7 @@ const Checkout = props => (
       }
     `}</style>
   </div>
-);
+)};
 Checkout.getInitialProps = async () => {
   const swapi = await fetch('https://jsonplaceholder.typicode.com/todos/1').then(res => res.json());
   console.log(swapi);

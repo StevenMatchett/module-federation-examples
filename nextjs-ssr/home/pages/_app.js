@@ -1,12 +1,12 @@
-import dynamic from 'next/dynamic';
-const page = import('../async-pages/_app');
+import { MatchettContextProvider } from 'matchett-test-context'
 
-const Page = dynamic(() => import('../async-pages/_app'));
-Page.getInitialProps = async ctx => {
-  const getInitialProps = (await page).default?.getInitialProps;
-  if (getInitialProps) {
-    return getInitialProps(ctx);
-  }
-  return {};
-};
+
+const Page = ({Component, pageProps = {}}) => {
+  return (
+    <MatchettContextProvider func={()=>{console.log("hello there!")}}>
+      <Component {...pageProps}/>
+    </MatchettContextProvider>
+  )
+
+}
 export default Page;

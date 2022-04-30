@@ -24,6 +24,11 @@ module.exports = withFederatedSidecar(
         requiredVersion: false,
         singleton: true,
       },
+      "matchett-test-context": {
+        requiredVersion: false,
+        singleton: true,
+        import: false,
+      }
     },
   },
   {
