@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@module-federation/nextjs-ssr@0.1.0-rc.3":
-  version "0.1.0-rc.3"
-  resolved "http://r.privjs.com/@module-federation%2fnextjs-ssr/-/nextjs-ssr-0.1.0-rc.3.tgz#d3d6a1fb9dc6ae181975fa6a2171bd3c39b1b933"
-  integrity sha512-lg+Y/YGF3EAEPRis3snx1vUljko8MoPv28qlvfWdw1L8njrq3rUpYrAhpApZYVCA7R9ZxvJ3sNSVauehyUN4yA==
+"@module-federation/nextjs-ssr@0.1.0-rc.4":
+  version "0.1.0-rc.4"
+  resolved "http://r.privjs.com/@module-federation%2fnextjs-ssr/-/nextjs-ssr-0.1.0-rc.4.tgz#4ae21dd071dcbf7eae7bb9432287e4600c42043a"
+  integrity sha512-f1UXUnFkmBRW+lxS+IaZ/TESv48+qO/kRR78+zS6JRck4OGar/gSsPMkQtyHw4IynT7P2A3HcxZCTYTWzRJtxQ==
   dependencies:
     chalk "4.1.2"
     encoding "^0.1.13"

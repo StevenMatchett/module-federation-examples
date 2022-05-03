@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
-    "@module-federation/nextjs-ssr": "0.1.0-rc.3",
+    "@module-federation/nextjs-ssr": "0.1.0-rc.4",
     "lodash": "4.17.21",
     "matchett-test-context": "*",
     "next": "12.1.0",

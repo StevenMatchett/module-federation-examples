@@ -9,20 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@module-federation/nextjs-ssr@0.0.8-beta.1":
-  version "0.0.8-beta.1"
-  resolved "http://r.privjs.com/@module-federation%2fnextjs-ssr/-/nextjs-ssr-0.0.8-beta.1.tgz#2f6824d61a4fcba40145bd3760c533539ae52f5e"
-  integrity sha512-5LrAwWtTXRLbG/JiaeF2iWJx9pbek6OBp49hxBt8IXP2q0WW8TcTBWGdRn5V0Ur+dXgrWB+m7wu367y9/g9F4g==
-  dependencies:
-    chalk "4.1.2"
-    encoding "^0.1.13"
-    lodash.clonedeep "^4.5.0"
-    webpack-federated-stats-plugin "^2.0.9"
-
-"@module-federation/nextjs-ssr@0.1.0-rc.3":
-  version "0.1.0-rc.3"
-  resolved "http://r.privjs.com/@module-federation%2fnextjs-ssr/-/nextjs-ssr-0.1.0-rc.3.tgz#d3d6a1fb9dc6ae181975fa6a2171bd3c39b1b933"
-  integrity sha512-lg+Y/YGF3EAEPRis3snx1vUljko8MoPv28qlvfWdw1L8njrq3rUpYrAhpApZYVCA7R9ZxvJ3sNSVauehyUN4yA==
+"@module-federation/nextjs-ssr@0.1.0-rc.4":
+  version "0.1.0-rc.4"
+  resolved "http://r.privjs.com/@module-federation%2fnextjs-ssr/-/nextjs-ssr-0.1.0-rc.4.tgz#4ae21dd071dcbf7eae7bb9432287e4600c42043a"
+  integrity sha512-f1UXUnFkmBRW+lxS+IaZ/TESv48+qO/kRR78+zS6JRck4OGar/gSsPMkQtyHw4IynT7P2A3HcxZCTYTWzRJtxQ==
   dependencies:
     chalk "4.1.2"
     encoding "^0.1.13"
@@ -556,7 +546,7 @@ loose-envify@^1.1.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-matchett-test-context@*:
+matchett-test-context@*, matchett-test-context@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/matchett-test-context/-/matchett-test-context-0.1.0.tgz#a8d16dd7800e1838eb656d16ece536309157c7dd"
   integrity sha512-oOpXhRyHiFLz12utmwwlzFZtW8/uCExl0vLWbe8G+/rLr0KQXmBEgvuQKCNLhLZhyARJuRHpFqL7I3gOiQkeNQ==
