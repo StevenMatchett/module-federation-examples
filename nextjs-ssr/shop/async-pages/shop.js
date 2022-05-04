@@ -1,7 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 
-const Shop = props => (
+const Shop = props => {
+  console.log(props)
+  return (
   <div>
     <Head>
       <title>Shop</title>
@@ -30,8 +32,10 @@ const Shop = props => (
       }
     `}</style>
   </div>
-);
+)
+};
 Shop.getInitialProps = async () => {
+  console.log("WHAT")
   const swapi = await fetch('https://swapi.dev/api/people/1').then(res => res.json());
   return swapi;
 };
