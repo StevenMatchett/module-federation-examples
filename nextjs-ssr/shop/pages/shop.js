@@ -1,12 +1,9 @@
-import dynamic from 'next/dynamic';
-const page = import('../async-pages/shop');
-
-const Page = dynamic(() => import('../async-pages/shop'));
+const Page = (props) => {
+  console.log("ASDFPROPS", props)
+  return <>THIS IS THE SHOP</>
+}
 Page.getInitialProps = async ctx => {
-  const getInitialProps = (await page).default?.getInitialProps;
-  if (getInitialProps) {
-    return getInitialProps(ctx);
-  }
-  return {};
+  
+  return {data:"abc"};
 };
 export default Page;

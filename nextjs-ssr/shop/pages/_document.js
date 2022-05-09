@@ -4,11 +4,11 @@ import { ExtendedHead, revalidate, flushChunks } from '@module-federation/nextjs
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    ctx.res.on('finish', () => {
-      revalidate().then(shouldReload => {
-        // do whatever else
-      });
-    });
+    // ctx.res.on('finish', () => {
+    //   revalidate().then(shouldReload => {
+    //     // do whatever else
+    //   });
+    // });
     const remotes = await flushChunks(process.env.REMOTES);
     const initialProps = await Document.getInitialProps(ctx);
     return {
